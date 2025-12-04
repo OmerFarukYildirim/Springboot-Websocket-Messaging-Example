@@ -18,7 +18,7 @@ public class MailServiceImpl implements MailService {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setFrom("noreply@gmail.com");
         mailMessage.setTo("aahmetyldrm99@gmail.com");
-        mailMessage.setText("Ben Java ile oluşturulan bir mailim. Ahmet reisin daşşanı yerim.");
+        mailMessage.setText("Ben Java ile oluşturulan bir mailim.");
         mailMessage.setSubject("ABDUNUN ÇÜKÜ");
         mailSender.send(mailMessage);
         return "Gönderildi";
